@@ -25,12 +25,14 @@ namespace quiz
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            Form3 newForm = new Form3(); // Replace Form2 with the name of your new form.
+            newForm.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Form2 newForm = new Form2(); // Replace Form2 with the name of your new form.
+            newForm.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
