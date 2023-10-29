@@ -13,20 +13,22 @@ namespace quiz
 {
     public partial class Form3 : Form
     {
-        private string answer = " ";
-        private string rightanswer = "answer1";
+        private Random rnd = new Random();
+        private int rightanswer = 0;
+        private int answer = 0;
 
         public Form3()
         {
-
             InitializeComponent();
+            int a = rnd.Next(0,20);
+            int b = rnd.Next(0, 20);
+            rightanswer = a + b;
             button1.Text = "Answer 1";
             button2.Text = "Answer 2";
             button3.Text = "Answer 3";
             button4.Text = "Answer 3";
+            textBox1.Text = "what is " + a + "plus " + b;
 
-            string a = "blobb blobb? answer1 = blob blob, answer 2 = blobby blobby, answer 3 = blobby blob, answer4 = blobby blob blob";
-            textBox1.Text = a;
         }
 
         private void AnswerChecker()
@@ -48,25 +50,25 @@ namespace quiz
 
         private void button1_Click(object sender, EventArgs e)
         {
-            answer = "answer1";
+            answer = 1;
             AnswerChecker();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            answer = "answer2";
+            answer = 2;
             AnswerChecker();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            answer = "answer4";
+            answer = 3;
             AnswerChecker();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            answer = "answer3";
+            answer = 4;
             AnswerChecker();
         }
     }
