@@ -18,7 +18,7 @@ namespace quiz
         {
             InitializeComponent();
             button1.Text = "OK";
-            button2.Text = "Understand";
+            button2.Text = "Go back";
             pictureBox1.Image = Image.FromFile("pictures/b.jpg");
         }
 

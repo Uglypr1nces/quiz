@@ -23,7 +23,7 @@ namespace quiz
             int a = rnd.Next(0,20);
             int b = rnd.Next(0, 20);
             rightanswer = a + b;
-            button1.Text = "Answer 1";
+            button1.Text = "Answer1";
             button2.Text = "Answer 2";
             button3.Text = "Answer 3";
             button4.Text = "Answer 3";
