@@ -27,19 +27,42 @@ namespace quiz
             int c = rnd.Next(-25, 25);
             int d = rnd.Next(-25, 25);
             int e = rnd.Next(-25, 25);
-            int f = rnd.Next(-25, 25);
+
             List<string> operators = new List<string>();
+            List<int> numbers = new List<int>();
+
+            numbers.Add(rightanswer);
+            numbers.Add(rightanswer + c + 1);
+            numbers.Add(rightanswer + d + 3);
+            numbers.Add(rightanswer + e -1);
+
             operators.Add("+");
             operators.Add("-");
             operators.Add("*");
             operators.Add("/");
 
             int r = rnd.Next(operators.Count);
+
             string s = operators[r];
+            
+            if (s == "+")
+            {
+                rightanswer = a + b;
+            }
+            else if (s == "-")
+            {
+                rightanswer = a - b;
+            }
+            else if (s == "*")
+            {
+                rightanswer = a * b;
+            }
+            else if (s == "/")
+            {
+                rightanswer = a / b;
+            }
 
-
-            rightanswer = a + b;
-            button1.Text = "Answer 1";
+            button1.Text = "1) " + ;
             button2.Text = "Answer 2";
             button3.Text = "Answer 3";
             button4.Text = "Answer 4";

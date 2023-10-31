@@ -4,15 +4,14 @@ namespace quiz
     {
         public Form1()
         {
+            
             InitializeComponent();
             label1.Text = "current highscore \n " + 0;
             label2.Text = "score \n" + 0;
             button1.Text = "start game";
             button2.Text = "rules";
             pictureBox1.Image = Image.FromFile("pictures/a.jpg");
-
         }
-
         private void label1_Click(object sender, EventArgs e)
         {
 
